@@ -1,0 +1,13 @@
+prefix=C:/Qt/Qt5.12.3/5.12.3/mingw73_64
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+
+Name: Qt5 Mqtt
+Description: Qt Mqtt module
+Version: 5.12.3
+Libs: -L${libdir} -lQt5Mqttd 
+Cflags: -DQT_MQTT_LIB -I${includedir}/QtMqtt -I${includedir}
+Requires: Qt5Core Qt5Network
+
